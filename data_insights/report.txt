@@ -1,0 +1,17 @@
+============================================================================
+Data Insights Report
+Version: 1.0.0
+Project: 
+Author: 
+Date:
+============================================================================
+Problem Statement:
+Objectives:
+Data Sources:
+Methodology:
+Findings:
+Recommendations:
+Conclusion:
+References:
+Appendices:
+============================================================================                            

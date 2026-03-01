@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/data_ingestion.py
+src/data_preprocessing.py
+src/logger.py
+src/model_builder.py
+src/model_evaluator.py
+src/model_predictor.py
+src/MLModel.egg-info/PKG-INFO
+src/MLModel.egg-info/SOURCES.txt
+src/MLModel.egg-info/dependency_links.txt
+src/MLModel.egg-info/entry_points.txt
+src/MLModel.egg-info/requires.txt
+src/MLModel.egg-info/top_level.txt
+tests/test_pipeline.py

@@ -1,0 +1,52 @@
+project:
+  name: CementStrength Prediction Model
+  environment: dev
+  random_state: 42
+
+data:
+  raw_path: data/raw/Concrete_Data.csv
+  processed_path: data/processed/processed_data.csv
+  target_column: "Concrete compressive strength(MPa, megapascals) "
+
+features:
+  drop_columns: []
+  scaling: standard
+
+split:
+  test_size: 0.2
+  shuffle: true
+
+model:
+  name: random_forest_regressor
+  params:
+    n_estimators: 200
+    max_depth: 10
+    min_samples_split: 2
+
+training:
+  cross_validation: true
+  cv_folds: 5
+
+evaluation:
+  metrics:
+    - r2
+    - mae
+    - mse
+    - rmse
+
+artifacts:
+  model_path: models/model.pkl
+  scaler_path: models/scaler.pkl
+  metrics_path: artifacts/metrics.json
+
+prediction:
+  input_path: data/raw/inference.csv
+  output_path: data/processed/predictions.csv
+
+mlflow:
+  tracking_uri: http://localhost:5000
+  experiment_name: CementStrength Prediction Model
+
+logging:
+  level: INFO
+  log_dir: logs

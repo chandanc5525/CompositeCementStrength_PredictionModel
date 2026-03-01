@@ -1,0 +1,43 @@
+stages:
+
+  data_ingestion:
+    cmd: python src/data_ingestion.py
+    deps:
+      - src/data_ingestion.py
+      - data/raw/Concrete_Data.csv
+    outs:
+      - data/processed/dataset.csv
+
+  data_preprocessing:
+    cmd: python src/data_preprocessing.py
+    deps:
+      - src/data_preprocessing.py
+      - data/processed/dataset.csv
+    params:
+      - data
+    outs:
+      - data/processed/features.csv
+
+  model_training:
+    cmd: python src/model_builder.py
+    deps:
+      - src/model_builder.py
+      - data/processed/features.csv
+      - params.yaml
+    params:
+      - model
+      - training
+    outs:
+      - models/model.pkl
+      - models/scaler.pkl
+
+  model_evaluation:
+    cmd: python src/model_evaluator.py
+    deps:
+      - src/model_evaluator.py
+      - models/model.pkl
+      - data/processed/features.csv
+    params:
+      - evaluation
+    metrics:
+      - reports/metrics.json

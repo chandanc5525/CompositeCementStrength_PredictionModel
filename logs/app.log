@@ -1,0 +1,14 @@
+2026-03-01 06:18:38,984 - src.data_ingestion - INFO - Loading data from data/raw/Concrete_Data.csv
+2026-03-01 06:18:38,997 - src.data_ingestion - INFO - Data shape: (1030, 9)
+2026-03-01 06:18:39,016 - src.data_preprocessing - INFO - Data preprocessing completed
+2026-03-01 06:18:39,064 - src.model_evaluator - INFO - Model evaluated: R2=0.6276
+2026-03-01 06:18:39,109 - src.model_evaluator - INFO - Model evaluated: R2=0.6255
+2026-03-01 06:18:39,140 - src.model_evaluator - INFO - Model evaluated: R2=0.1885
+2026-03-01 06:18:39,161 - src.model_evaluator - INFO - Model evaluated: R2=0.0551
+2026-03-01 06:18:39,209 - src.model_evaluator - INFO - Model evaluated: R2=0.8348
+2026-03-01 06:18:42,557 - src.model_evaluator - INFO - Model evaluated: R2=0.8839
+2026-03-01 06:18:44,015 - src.model_evaluator - INFO - Model evaluated: R2=0.8829
+2026-03-01 06:18:46,195 - src.model_evaluator - INFO - Model evaluated: R2=0.7601
+2026-03-01 06:20:35,048 - src.model_evaluator - INFO - Model evaluated: R2=0.8929
+2026-03-01 06:20:35,327 - src.model_evaluator - INFO - Model evaluated: R2=0.6056
+2026-03-01 06:20:35,367 - src.model_evaluator - INFO - Model evaluated: R2=0.6782

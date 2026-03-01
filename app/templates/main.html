@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Concrete Strength Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>Concrete Strength Prediction</h2>
+
+<form method="post" action="/predict">
+    <input type="number" step="any" name="cement" placeholder="Cement" required>
+    <input type="number" step="any" name="blast_furnace_slag" placeholder="Blast Furnace Slag" required>
+    <input type="number" step="any" name="fly_ash" placeholder="Fly Ash" required>
+    <input type="number" step="any" name="water" placeholder="Water" required>
+    <input type="number" step="any" name="superplasticizer" placeholder="Superplasticizer" required>
+    <input type="number" step="any" name="coarse_aggregate" placeholder="Coarse Aggregate" required>
+    <input type="number" step="any" name="fine_aggregate" placeholder="Fine Aggregate" required>
+    <input type="number" name="age" placeholder="Age (Days)" required>
+
+    <button type="submit">Predict</button>
+</form>
+
+{% if prediction %}
+    <h3>Predicted Strength: {{ prediction }} MPa</h3>
+{% endif %}
+
+</body>
+</html>
