@@ -1,0 +1,6 @@
+.venv/
+.git/
+__pycache__/
+*.pyc
+data/
+dvc_storage/
