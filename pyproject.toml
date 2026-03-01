@@ -24,6 +24,7 @@ dependencies = [
     "dvc>=3.0.0",
     "python-dotenv>=1.0.0",
     "python-multipart>=0.0.22",
+    "torch>=2.10.0",
 ]
 
 [project.optional-dependencies]
