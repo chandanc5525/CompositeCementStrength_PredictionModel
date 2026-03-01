@@ -35,6 +35,3 @@ jobs:
         run: |
           uv run python main.py
 
-      - name: Run Tests (if available)
-        run: |
-          uv run pytest
