@@ -1,6 +1,11 @@
-def main():
-    print("Hello from compositecementstrength-predictionmodel!")
+from src.data_ingestion import data_ingestion
+
+# Define Orchestron Model: Entry Point 
+def main(): # Function Definition
+  # Step1: Data Ingestion
+  df = data_ingestion()
+  print(df.head())
 
 
-if __name__ == "__main__":
-    main()
+
+main()    # Function Calling
